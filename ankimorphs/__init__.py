@@ -70,7 +70,6 @@ def main() -> None:
     gui_hooks.sync_will_start.append(recalc_on_sync)
 
     gui_hooks.profile_will_close.append(clear_seen_morphs)
-    gui_hooks.webview_will_show_context_menu.append(add_name)
 
 
 def init_toolbar_items(links: list[str], toolbar: Toolbar) -> None:
