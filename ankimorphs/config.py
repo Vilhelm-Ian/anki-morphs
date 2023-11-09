@@ -228,6 +228,15 @@ def _get_bool_config(key: str, is_default: bool = False) -> bool:
     return config_item
 
 
+def _get_recalc_on_sync(key: str, is_default: bool = False) -> bool:
+    if is_default:
+        config_item = get_default_config(key)
+    else:
+        config_item = _get_config(key)
+    assert isinstance(config_item, bool)
+    return config_item
+
+
 def _get_filter_str(_filter: FilterTypeAlias, key: str) -> str:
     filter_item = _filter[key]
     assert isinstance(filter_item, str)
