@@ -11,4 +11,3 @@ To update the list of names, input a list of names separated by new lines into t
 ![example-name-list.png](../../img/example-name-list.png)
 
 During a review, you can also add names to the list by selecting a word, right-clicking it, and choosing "Mark as name" from the dropdown menu. And the word will automatically be added to names.txt
-![mark-as-name.png](../../img/mark-as-name.png)
